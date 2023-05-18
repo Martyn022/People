@@ -57,11 +57,7 @@ public class PersonBuilder {
             );
         }
 
-        Person person = new PersonBuilder()
-                .setName("Антошка")
-                .setSurname("Лопатов")
-                .setAge(48)
-                .build();
+        Person person;
         if (age == -1) {
             person = new Person(name, surname);
         } else {
